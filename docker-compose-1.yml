@@ -1,0 +1,10 @@
+version: 3.0
+services:
+  ubuntu:
+        image:ngnix:latest
+        ports:
+              - "8080:80"
+networks:
+   my_bridge1
+      name:my_bridge1
+      driver:bridge
